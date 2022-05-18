@@ -140,22 +140,34 @@ header {
         margin-bottom: 0.5rem;
         padding-bottom: 0.5rem; }
   header .nav-item:hover .main-menu {
-    display: block; }
+    display: block;
+    border: 1px solid white !important; }
+    header .nav-item:hover .main-menu .dropend {
+      border-left: 1px solid white;
+      margin-left: -0.05rem; }
   header .dropdown a {
     font-size: 12px;
     padding: 8px; }
   header .dropdown-toggle::after {
     display: none; }
-  header .dropdown-menu a:hover {
-    background-color: #33698f0e !important;
+  header .dropdown ul {
+    background-color: #004273 !important;
+    border-color: #fff !important; }
+    header .dropdown ul * {
+      color: white;
+      background-color: #004273 !important; }
+      header .dropdown ul *:hover {
+        color: white; }
+    header .dropdown ul .sub-menu * {
+      color: white !important; }
+  header .dropdown a:hover {
+    background-color: #d9000d !important;
     width: 100%;
     display: block; }
-  header .dropdown-menu li:hover .dropdown-toggle::after {
-    color: #d9000d;
+  header .dropdown li:hover .dropdown-toggle::after {
     font-size: 1rem; }
   header .sub-menu * {
     text-align: left !important;
-    background-color: white;
     color: black;
     width: 100%;
     white-space: normal; }
@@ -229,8 +241,6 @@ header {
       height: 53px; }
   header .sub-menu {
     width: 99%;
-    margin-left: -0.25% !important; }
-    header .sub-menu ul {
-      border-style: solid !important; } }
+    margin-left: -0.25% !important; } }
 
 /*# sourceMappingURL=header.css.map */
